@@ -179,7 +179,7 @@ public class MojoDescriptorCreator
             // groupId:artifactId:goal or pluginPrefix:version:goal (since Maven 3.9.0)
 
             String firstToken = tok.nextToken();
-            // groupId or pluginPrefix? heuristics: groupId contains . but not pluginPrefix
+            // groupId or pluginPrefix? heuristics: groupId contains dot (.) but not pluginPrefix
             if ( firstToken.contains( "." ) )
             {
                 // We have everything that we need except the version
