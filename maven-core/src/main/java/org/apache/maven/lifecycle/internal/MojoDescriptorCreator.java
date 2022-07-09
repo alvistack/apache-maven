@@ -176,7 +176,7 @@ public class MojoDescriptorCreator
         }
         else if ( numTokens == 3 )
         {
-            // groupId:artifactId:goal or pluginPrefix:version:goal (since Maven 3.9)
+            // groupId:artifactId:goal or pluginPrefix:version:goal (since Maven 3.9.0)
 
             String firstToken = tok.nextToken();
             // groupId or pluginPrefix? heuristics: groupId contains . but not pluginPrefix
