@@ -1,0 +1,3 @@
+maven source: file-without-copyright-information
+maven source: no-debian-changes
+maven source: source-contains-prebuilt-windows-binary
