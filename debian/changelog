@@ -1,5 +1,5 @@
-maven (100:3.8.6-1) UNRELEASED; urgency=medium
+maven (100:3.9.2-1) UNRELEASED; urgency=medium
 
-  * https://github.com/apache/maven/releases/tag/maven-3.8.6
+  * https://github.com/apache/maven/releases/tag/maven-3.9.2
 
- -- Wong Hoi Sing Edison <hswong3i@gmail.com>  Mon, 11 Jul 2022 16:03:08 +0800
+ -- Wong Hoi Sing Edison <hswong3i@pantarei-design.com>  Tue, 27 Jun 2023 12:21:28 +0800
