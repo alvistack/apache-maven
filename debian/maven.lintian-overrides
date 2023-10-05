@@ -1,0 +1,5 @@
+maven: copyright-without-copyright-notice
+maven: initial-upload-closes-no-bugs
+maven: no-manual-page
+maven: virtual-package-depends-without-real-package-depends Depends: java-runtime
+maven: zero-byte-file-in-doc-directory
