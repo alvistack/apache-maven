@@ -1,0 +1,31 @@
+#!/usr/bin/make -f
+
+SHELL := /bin/bash
+
+override_dh_auto_build:
+
+override_dh_auto_install:
+	install -Dpm755 -d debian/tmp/usr/bin
+	install -Dpm755 -d debian/tmp/usr/share/bash-completion/completions
+	install -Dpm755 -d debian/tmp/usr/share/maven
+	install -Dpm755 -t debian/tmp/usr/share/bash-completion/completions usr/share/bash-completion/completions/mvn
+	rsync -av usr/share/maven/ debian/tmp/usr/share/maven
+	ln -fs /usr/share/maven/bin/mvn debian/tmp/usr/bin/mvn
+	ln -fs /usr/share/maven/bin/mvnDebug debian/tmp/usr/bin/mvnDebug
+
+override_dh_strip:
+
+override_dh_strip_nondeterminism:
+
+override_dh_shlibdeps:
+
+override_dh_makeshlibs:
+
+override_dh_dwz:
+
+override_dh_auto_test:
+
+override_dh_auto_clean:
+
+%:
+	dh $@
